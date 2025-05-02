@@ -1,0 +1,11 @@
+com\flashcards\QuickAnswerAchievement.class
+com\flashcards\WorstFirstSorter.class
+com\flashcards\CardOrganizer.class
+com\flashcards\CorrectAnswerAchievement.class
+com\flashcards\RepeatAnswerAchievement.class
+com\flashcards\Achievement.class
+com\flashcards\FlashcardApp.class
+com\flashcards\RecentMistakesFirstSorter.class
+com\flashcards\ConfidentAnswerAchievement.class
+com\flashcards\Card.class
+com\flashcards\RandomSorter.class
