@@ -1,0 +1,5 @@
+What is the capital of France?|Paris
+Who wrote "War and Peace"?|Leo Tolstoy
+What is the square root of 64?|8
+What is the chemical symbol for gold?|Au
+What year did World War II end?|1945
