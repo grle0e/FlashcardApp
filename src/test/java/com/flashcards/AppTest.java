@@ -1,7 +1,9 @@
 package com.flashcards;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.util.*;
+
 import org.junit.jupiter.api.Test;
 
 public class AppTest {

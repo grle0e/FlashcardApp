@@ -1,28 +1,39 @@
 package com.flashcards;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class RecentMistakesFirstSorter implements CardOrganizer {
+    private final LinkedList<Card> recentMistakes = new LinkedList<>();
+
     @Override
     public List<Card> organize(List<Card> cards) {
         List<Card> result = new ArrayList<>();
-        List<Card> wrongCards = new ArrayList<>();
-        List<Card> correctCards = new ArrayList<>();
-        
-        // Separate cards into wrong and correct ones
+
+        // Шинээр буруу хариулсан картуудыг List-ийн эхэнд нэмнэ
         for (Card card : cards) {
             if (card.wasWrongLastTime()) {
-                wrongCards.add(card);
-            } else {
-                correctCards.add(card);
+                // давхардахаас сэргийлнэ
+                recentMistakes.remove(card); 
+                recentMistakes.addFirst(card);
             }
         }
-        
-        // Combine lists - wrong cards first, then correct ones
-        result.addAll(wrongCards);
-        result.addAll(correctCards);
-        
+
+        // recentMistakes-д байгаа картуудыг эхэнд нэмэх
+        for (Card card : recentMistakes) {
+            if (cards.contains(card) && !result.contains(card)) {
+                result.add(card);
+            }
+        }
+
+        // бусад зөв хариулсан картуудыг дараа нь нэмэх
+        for (Card card : cards) {
+            if (!result.contains(card)) {
+                result.add(card);
+            }
+        }
+
         return result;
     }
 }

@@ -14,7 +14,7 @@ public class CorrectAnswerAchievement implements Achievement {
     }
     
     @Override
-    public boolean isAchieved() {
+    public boolean isAchieved() {   
         return achieved;
     }
     
