@@ -25,7 +25,7 @@ public class AppTest {
         CardOrganizer sorter = new WorstFirstSorter();
         List<Card> sorted = sorter.organize(cards);
 
-        assertEquals("Q1", sorted.get(0).getQuestion()); // хамгийн муу үнэлгээтэй
+        assertEquals("Q2", sorted.get(0).getQuestion()); // хамгийн муу үнэлгээтэй
         assertEquals("Q1", sorted.get(1).getQuestion());
     }
 }
