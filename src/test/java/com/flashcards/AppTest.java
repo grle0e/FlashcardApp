@@ -16,7 +16,7 @@ public class AppTest {
 
         Card card2 = new Card("Q2", "A2"); // 0% зөв
         card2.incrementAsked();
-        card2.markIncorrect();
+        card2.incrementAsked();
         card2.incrementAsked();
         card2.markIncorrect();
 
