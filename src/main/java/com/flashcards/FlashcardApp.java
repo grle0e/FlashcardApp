@@ -76,7 +76,7 @@ public class FlashcardApp {
         achievements.add(repeatAchievement);
         achievements.add(confidentAchievement);
 
-        // Load cards from file
+        // fila-aas unshih
         try {
             loadCards(cardsFile, invertCards);
         } catch (IOException e) {
